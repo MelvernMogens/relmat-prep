@@ -106,7 +106,7 @@ def parse_topics(path):
             elif tag == 'topic':
                 tid, title, sub = split(rest, 3)
                 topic = dict(id=tid, title=title, sub=sub, week=week['n'], intro=[], formulas=[],
-                             traps=[], tips=[], widgets=[], examples=[], tables=[])
+                             traps=[], tips=[], widgets=[], examples=[], tables=[], slides=[])
                 week['topics'].append(topic)
                 ex = None
             elif tag == 'intro':
@@ -129,7 +129,7 @@ def parse_topics(path):
                 topic['widgets'].append(rest)
             elif tag == 'example':
                 title, src = split(rest, 2)
-                ex = dict(title=title, src=src, soal=[], steps=[], answer='', uses=[])
+                ex = dict(title=title, src=src, soal=[], steps=[], answer='', uses=[], slides=[])
                 topic['examples'].append(ex)
             elif tag == 'soal':
                 mode = 'soal'
@@ -142,6 +142,20 @@ def parse_topics(path):
                 mode = 'answer'
             elif tag == 'uses':
                 ex['uses'] = [u.strip() for u in rest.split(',') if u.strip()]
+            elif tag == 'slide':
+                if ex is None:
+                    errors.append(f'{where}: @slide outside @example')
+                else:
+                    for sl in rest.split(','):
+                        sl = sl.strip().lower().replace('slide ', '')
+                        if not sl:
+                            continue
+                        if not re.fullmatch(r'w\d+-\d+', sl):
+                            errors.append(f'{where}: bad slide key {sl!r} (expect w4-06)')
+                        elif not (ROOT / 'assets' / 'slides' / f'{sl}.jpg').exists():
+                            errors.append(f'{where}: unknown slide {sl} (no assets/slides/{sl}.jpg)')
+                        else:
+                            ex['slides'].append(sl)
             elif tag == 'check':
                 check(rest, where)
             elif tag == 'end':

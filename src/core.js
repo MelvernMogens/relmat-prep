@@ -2,6 +2,7 @@
 /* ================= DATA & INDEX ================= */
 const D = window.__DATA__;
 const WEEKS = D.weeks.filter(w => w.n <= 7);
+const SLIDES = (D.slides || {});
 const T = {}, F = {}, USES = {}, TOPICS = [];
 D.weeks.forEach(w => w.topics.forEach(t => {
   T[t.id] = t; t.wk = w;
@@ -242,6 +243,7 @@ function renderExample(el, e, o = {}) {
   let k = Math.min(REVEAL.get(key) || 0, n);
   el.innerHTML = `<article class="card ex">
     <header class="ex-h"><div class="ex-tags">${srcTag(e.src)}${o.total ? `<span class="muted sm">Contoh ${o.index + 1} dari ${o.total}</span>` : ''}</div><h3>${esc(e.title)}</h3></header>
+    ${(e.slides && e.slides.length) ? `<div class="slideshow">${e.slides.map(sl => SLIDES[sl] ? `<figure class="slidefig"><img src="${SLIDES[sl]}" alt="Slide ${sl}" decoding="async"><figcaption>Slide asli dosen — ${sl.replace('-', '.')}</figcaption></figure>` : '').join('')}</div>` : ''}
     <div class="soal"><div class="label">Soal</div>${soalHTML(e.soal)}</div>
     <div class="steps"></div><div class="ex-ctrl"></div><div class="ex-end"></div></article>`;
   const art = el.firstElementChild, S = $('.steps', art), C = $('.ex-ctrl', art), E = $('.ex-end', art);

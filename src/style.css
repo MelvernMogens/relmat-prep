@@ -592,3 +592,8 @@ details.uf[open]>summary{margin-bottom:6px}
 .lcard.hot{border-color:var(--red-100)}
 
 @media (max-width:640px){.dtbl th,.dtbl td{padding:7px 9px}.dtbl{font-size:14.5px}}
+
+.slideshow{display:flex;gap:10px;flex-direction:column;margin:4px 0 2px}
+.slidefig{margin:0;border:1px solid var(--line2);border-radius:10px;overflow:hidden;background:#fff}
+.slidefig img{display:block;width:100%;height:auto}
+.slidefig figcaption{font-size:11.5px;color:var(--mut);padding:6px 10px;border-top:1px solid var(--line2);background:#fafbfd}

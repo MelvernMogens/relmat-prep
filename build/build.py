@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """Assemble single-file offline HTML: v2/out/index.html"""
 import json, pathlib, subprocess, sys, re
@@ -6,6 +7,13 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 subprocess.run([sys.executable, str(ROOT / 'build' / 'parse.py')], check=True)
 subprocess.run(['node', str(ROOT / 'build' / 'texcheck.js')], check=True)
 data = json.loads((ROOT / 'build' / 'content.json').read_text())
+# ---- embed slide images (referenced via @slide w4-06) ----
+import base64, glob as _glob, os as _os
+_slides = {}
+for _f in _glob.glob(str(ROOT / 'assets' / 'slides' / '*.jpg')):
+    _key = _os.path.splitext(_os.path.basename(_f))[0]
+    _slides[_key] = 'data:image/jpeg;base64,' + base64.b64encode(open(_f, 'rb').read()).decode()
+data['slides'] = _slides
 corr = ROOT / 'content' / 'corrections.json'
 if corr.exists():
     data['extra']['corrections'] = json.loads(corr.read_text())
@@ -30,14 +38,14 @@ html = f'''<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <meta name="robots" content="noindex,nofollow">
-<title>Brand Analytics — Belajar dari Kasus</title>
+<title>Relationship Marketing — Belajar dari Kasus</title>
 <style>{fonts}</style>
 <style>{kcss}</style>
 <style>{css}</style>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#/"><span class="logo">B</span><span>Brand Analytics</span></a><button id="menu-btn" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></header>
-<aside id="side"><a class="brand" href="#/"><span class="logo">B</span><span>Brand Analytics<small>Prasetiya Mulya · W1–W7</small></span></a><nav id="snav"></nav><div id="side-tree"></div></aside>
+<header class="topbar"><a class="brand" href="#/"><span class="logo">R</span><span>Relationship Marketing</span></a><button id="menu-btn" aria-label="Menu"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></header>
+<aside id="side"><a class="brand" href="#/"><span class="logo">R</span><span>Relationship Marketing<small>Prasetiya Mulya · W1–W7</small></span></a><nav id="snav"></nav><div id="side-tree"></div></aside>
 <div id="scrim"></div>
 <main><div id="view"></div></main>
 <nav id="tabbar"></nav>
