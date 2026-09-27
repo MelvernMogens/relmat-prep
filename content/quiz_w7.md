@@ -9,7 +9,10 @@ Toko Roti Maya mencatat 5 kejadian: (1) pembeli mencoba gratisan roti varian bar
 + 3 — kejadian 1, 3, dan 5 menyentuh produk, organisasi, atau program marketing
 - 5, karena semua kegiatan perusahaan pada dasarnya ikut memengaruhi pelanggan
 @why
-Kriteria Exhibit 3.3: bonding terjadi setiap kali prospect/customer berinteraksi dengan produk, servis, organisasi, ATAU komponen program marketing — interaksinya tidak harus transaksi. Cicip gratisan = produk; DM admin = organisasi/layanan; baca selebaran = program marketing → 3 momen. Rapat bahan baku dan tutup buku pajak gugur karena tidak ada prospect/customer yang bersentuhan dengan apa pun milik firma. Bonus insight: tiap momen itu juga peluang mempelajari customer lebih dalam.
+Kriteria Exhibit 3.3: bonding terjadi setiap kali prospect/customer berinteraksi dengan produk, servis, organisasi, ATAU komponen program marketing — interaksinya gak harus transaksi.
+Cicip gratisan = produk; DM admin = organisasi/layanan; baca selebaran = program marketing → 3 momen.
+Rapat bahan baku dan tutup buku pajak gugur karena gak ada prospect/customer yang bersentuhan dengan apa pun milik firma.
+Bonus insight: tiap momen itu juga peluang mempelajari customer lebih dalam.
 @check len([1,3,5]) == 3
 @end
 
@@ -20,7 +23,8 @@ Definisi paling tepat: kapan customer bonding terbentuk menurut kerangka integra
 - Saat tim marketing menjalankan kampanye advertising besar-besaran di media massa
 + Setiap kali prospect/customer berinteraksi dengan produk, servis, organisasi, atau program marketing
 @why
-Exhibit 3.3 menegaskan bonding terbentuk di TIAP interaksi — UX aplikasi, layanan CS, sampai handling komplain pun momen pembentuk bond, bukan cuma transaksi atau kartu member (itu miskonsepsi di @trap materi). Tiap kontak juga kesempatan ganda: mengenal customer lebih dalam DAN memperkuat bond.
+Exhibit 3.3 menegaskan bonding terbentuk di TIAP interaksi — UX aplikasi, layanan CS, sampai handling komplain pun momen pembentuk bond, bukan cuma transaksi atau kartu member (itu miskonsepsi di @trap materi).
+Tiap kontak juga kesempatan ganda: mengenal customer lebih dalam DAN memperkuat bond.
 @check len(['produk','servis','organisasi','program marketing']) == 4
 @end
 
@@ -31,7 +35,9 @@ Di roda integrated relationship marketing (slide 4), di posisi berapa customer b
 - Elemen ke-7, di antara customer satisfaction dan RM process
 - Elemen ke-8, sebagai elemen terakhir yang memayungi semuanya
 @why
-Urutan roda: 1 framework, 2 customer life cycle, 3 customer value, 4 customer experience, 5 customer satisfaction, 6 customer bonding, 7 branding in RM, 8 RM process — makanya bab ini berjudul "6. Managing Customer Bonding". Posisinya penting: satisfaction tanpa bonding gampang ditinggal saat kompetitor memberi pengalaman serupa. Elemen ke-4 itu customer experience; ke-8 itu RM process, bukan bonding.
+Urutan roda: 1 framework, 2 customer life cycle, 3 customer value, 4 customer experience, 5 customer satisfaction, 6 customer bonding, 7 branding in RM, 8 RM process — makanya bab ini berjudul "6. Managing Customer Bonding".
+Posisinya penting: satisfaction tanpa bonding gampang ditinggal saat kompetitor memberi pengalaman serupa.
+Elemen ke-4 itu customer experience; ke-8 itu RM process — bukan bonding.
 @check 7 - 5 == 2
 @end
 
@@ -42,7 +48,9 @@ Dita membeli kaus official bermerek kedai dan merasa satu nilai dengan brand-nya
 + Identity — keterikatan emosional pada nilai brand tanpa direct interaction dan database
 - Community, karena para pemakai kaus logo membentuk kelompok fans di mata publik
 @why
-Identity bond: masih satu arah, belum ada direct interaction dan customer database — kaus bermerek adalah outward sign of affinity (slide 7). Miskonsepsi klasik: "sudah pakai logo = relationship" — salah, Relationship menuntut interaksi dua arah dan database driven (customer dikenal). Naik ke Relationship baru saat Dita terdaftar dan dua arah; Community butuh multilogue antar customer.
+Identity bond: masih satu arah, belum ada direct interaction dan customer database — kaus bermerek adalah outward sign of affinity (slide 7).
+Miskonsepsi klasik: "sudah pakai logo = relationship". Salah — Relationship menuntut interaksi dua arah dan database driven (customer dikenal).
+Naik ke Relationship baru saat Dita terdaftar dan dua arah; Community butuh multilogue antar customer.
 @end
 
 @q 7 :: w7-bonding-degrees :: w7-monologue, w7-multilogue, w7-degree
@@ -52,7 +60,8 @@ Ujian sering menukar ciri antar level. Pasangan arah interaksi yang BENAR menuru
 - Awareness = monologue; Identity = dialogue; Relationship & Community = multilogue bersama
 - Semua derajat pada dasarnya dialogue, yang berbeda hanya jumlah pesannya
 @why
-Arah interaksi adalah pisau pembeda utama: Awareness/Identity masih monologue (customer tidak dikenal, tanpa database), Relationship jadi dialogue dua arah (database driven), Community jadi multilogue — Charles bicara dengan Albert DAN dengan customer lain. Hafalkan arahnya dulu, ciri lain (logo, app, word-of-mouth) menyusul dari situ.
+Arah interaksi adalah pisau pembeda utama: Awareness/Identity masih monologue (customer gak dikenal, tanpa database), Relationship jadi dialogue dua arah (database driven), Community jadi multilogue — Charles bicara dengan Albert DAN dengan customer lain.
+Hafalkan arahnya dulu; ciri lain (logo, app, word-of-mouth) menyusul dari situ.
 @check len(['Awareness','Identity','Relationship','Community','Advocacy']) == 5
 @end
 
@@ -63,7 +72,9 @@ Menurut Exhibit 3.3, weakness apa yang SAMA-sama dimiliki derajat Awareness dan 
 - May be difficult to control, dengan heavy company involvement dari pihak perusahaan
 - Competition may copy, karena pesaing bisa meniru programnya dengan cepat dan murah
 @why
-Awareness dan Identity sama-sama monologue satu arah — akibatnya: fragile, expensive, measurability/accountability difficult, dan nothing learned about individual customer (dua-duanya tidak mengumpulkan data customer). "Difficult to control" itu weakness Community; follow-through/incentives/empowerment justru critical success factors Advocacy. "Competition may copy" memang muncul di tabel slide 11, tapi bukan weakness BERSAMA Awareness & Identity — pasangan monologue ini lemah karena fragile, mahal, sulit diukur, dan tanpa data individu.
+Awareness dan Identity sama-sama monologue satu arah — akibatnya sama: fragile, expensive, sulit diukur, dan nothing learned about individual customer (dua-duanya gak mengumpulkan data customer).
+"Difficult to control" itu weakness Community; follow-through/incentives/empowerment justru critical success factors Advocacy.
+"Competition may copy" memang muncul di tabel slide 11, tapi bukan weakness BERSAMA Awareness & Identity — pasangan monologue ini lemah karena fragile, mahal, sulit diukur, dan tanpa data individu.
 @end
 
 @q 7 :: w7-bonding-degrees :: w7-exhibit33, w7-degree
@@ -73,7 +84,9 @@ Critical success factors "repetition, reach, creative execution" milik derajat m
 - Relationship, karena database dibangun dari kampanye kreatif yang berulang
 - Community, karena komunitas tumbuh dari event kreatif yang rutin digelar
 @why
-CSF Awareness = repetition, reach, creative execution — wajar karena awareness dibentuk lewat monologue (image advertising, promotions, PR, event sponsorship) yang harus diulang dan luas. Bandingkan: CSF Advocacy = excellent follow-through, incentives, empowerment — advocacy butuh konsistensi layanan dan keleluasaan customer bicara atas nama brand. Tukar-tukaran CSF antar derajat adalah pola soal ujian yang sering muncul.
+CSF Awareness = repetition, reach, creative execution — wajar, karena awareness dibentuk lewat monologue (image advertising, promotions, PR, event sponsorship) yang memang harus diulang dan luas.
+Bandingkan: CSF Advocacy = excellent follow-through, incentives, empowerment — advocacy butuh konsistensi layanan dan keleluasaan customer bicara atas nama brand.
+Tukar-tukaran CSF antar derajat adalah pola soal ujian yang sering muncul.
 @check len(['repetition','reach','creative execution']) == 3
 @end
 
@@ -84,7 +97,9 @@ Lihat diagram Types of Bonding Strategies (slide 13). Apa yang berada di PUSAT d
 - Financial bonds — strategi pertama sekaligus terkuat, yang lain hanyalah penguatnya saja
 + Excellent Service Quality and Value — inti yang dilayani keempat keluarga strategi
 @why
-Pusat diagram: Excellent Service Quality and Value — keempat strategi (I Financial, II Social, III Customization, IV Structural) mengelilingi dan bertumpu padanya. Maknanya: program bonding bukan pengganti kualitas layanan; bonding di atas layanan buruk justru mempercepat customer pergi. "Customer database" terdengar pintar tapi itu alat Customization, bukan pusat diagram; "financial bonds terkuat" kebalikan dari isi materi (financial paling mudah ditiru).
+Pusat diagram: Excellent Service Quality and Value — keempat strategi (I Financial, II Social, III Customization, IV Structural) mengelilingi dan bertumpu padanya.
+Maknanya: program bonding bukan pengganti kualitas layanan; bonding di atas layanan buruk justru mempercepat customer pergi.
+"Customer database" kedengaran pintar, tapi itu alat Customization, bukan pusat diagram; "financial bonds terkuat" kebalikan dari isi materi (financial paling mudah ditiru).
 @check len(['Financial','Social','Customization','Structural']) == 4
 @end
 
@@ -95,7 +110,9 @@ Warung Sederhana memberi tarif langganan lama lebih rendah setelah lima tahun ja
 - Customization bonds — customer intimacy, karena hubungan 5 tahun berarti kebutuhan sudah intim diketahui
 - Structural bonds — joint investments, karena 5 tahun investasi waktu adalah investasi bersama
 @why
-Kata kunci "harga" memetakan ke keluarga Financial; bentuk spesifiknya stable pricing — slide 14 menyebut lower price increases (kenaikan harga lebih kecil) untuk customer lama dibanding baru. Pengecoh social/customization menjerat mereka yang membaca "5 tahun" sebagai relasi personal atau keintiman — durasi bukan penentu keluarga; MEKANISME ikatannya (uang, relasi, penyesuaian, sistem) yang menentukan.
+Kata kunci "harga" memetakan ke keluarga Financial; bentuk spesifiknya stable pricing — slide 14 menyebut lower price increases (kenaikan harga lebih kecil) untuk customer lama dibanding baru.
+Pengecoh social/customization menjerat yang membaca "5 tahun" sebagai relasi personal atau keintiman — durasi bukan penentu keluarga.
+Yang menentukan: MEKANISME ikatannya (uang, relasi, penyesuaian, sistem).
 @end
 
 @q 7 :: w7-bonding-strategies :: w7-customization-bonds, w7-structural-bonds
@@ -111,7 +128,10 @@ Program: "aplikasi membaca pola belanja dan mengirim notifikasi bahan dapur yang
 - Structural — integrated information system, karena sistem informasi yang menjalankannya
 + Customization — anticipation/innovation, karena database memprediksi reorder tiap individu
 @why
-Prediksi kebutuhan + reminder dari database = anticipation/innovation, bentuk Customization (slide 16: database memprediksi kapan customer perlu reorder). Jebakan besar di sini Structural: sistem informasi memang menjalankan program, tapi integrated information system sebagai bentuk Structural menunjuk pada sistem yang MENYATUKAN OPERASI dua pihak (seperti tablet POS terhubung di mitra), bukan sekadar alat internal pengirim reminder. Financial/Social menjerat yang membaca efeknya (beli lagi, hubungan jalan) bukan mekanismenya.
+Prediksi kebutuhan + reminder dari database = anticipation/innovation, bentuk Customization (slide 16: database memprediksi kapan customer perlu reorder).
+Jebakan besar di sini Structural.
+Sistem informasi memang menjalankan program, tapi bentuk Structural = sistem yang MENYATUKAN OPERASI dua pihak (tablet POS terhubung di mitra) — bukan sekadar alat internal pengirim reminder.
+Financial/Social menjerat yang membaca efeknya (beli lagi, hubungan jalan), bukan mekanismenya.
 @end
 
 @q 7 :: w7-bonding-strategies :: w7-structural-bonds
@@ -121,7 +141,9 @@ Dibanding ketiga keluarga lainnya, kenapa structural bonds paling "mengunci" cus
 + Sistem dan proses sudah menyatu dengan operasi customer — pindah berarti rombak operasi
 - Karena struktur memastikan customer selalu mendapat harga terbaik dibanding kompetitor mana pun
 @why
-Structural bonds mengikat lewat sistem dan operasi yang menyatu dengan customer/mitra — pola free computers di slide 17: peralatan dan proses sudah nyambung, pindah berarti rombak operasi. I → IV memang bisa dibaca sebagai eskalasi: financial mengikat lewat uang (mudah ditiru), social lewat relasi, customization lewat penyesuaian individu, structural paling tertanam di operasi. Opsi hemat biaya dan harga terbaik mengarang logika yang gak ada di slide.
+Structural bonds mengikat lewat sistem dan operasi yang menyatu dengan customer/mitra — pola free computers di slide 17: peralatan dan proses sudah nyambung, pindah berarti rombak operasi.
+I → IV memang bisa dibaca sebagai eskalasi: financial mengikat lewat uang (mudah ditiru), social lewat relasi, customization lewat penyesuaian individu, structural paling tertanam di operasi.
+Opsi hemat biaya dan harga terbaik mengarang logika yang gak ada di slide.
 @end
 
 @q 7 :: w7-bonding-strategies :: w7-financial-bonds, w7-social-bonds
@@ -131,7 +153,10 @@ Anggap: poin reward kamu ditiru persis oleh kompetitor minggu depan dengan nomin
 - Tidak masalah, karena loyalty program pada dasarnya tidak pernah ditiru oleh kompetitor
 - Kompetitor melanggar aturan, karena program loyalty dilindungi regulasi persaingan usaha
 @why
-Miskonsepsi di @trap materi: diskon dan poin sering disangka bonding "sejati". Financial bonds mengikat lewat insentif uang — gampang ditiru kompetitor (weakness "competition may copy") dan tidak membangun ikatan emosional/struktural. Empat keluarga itu pelengkap berlapis: financial = alasan ekonomis tinggal; social, customization, structural = alasan relasional dan struktural. Jadi bukan "hapus financial", tapi jangan berhenti di financial.
+Miskonsepsi di @trap materi: diskon dan poin sering disangka bonding "sejati".
+Financial bonds mengikat lewat insentif uang — gampang ditiru kompetitor (weakness "competition may copy") dan gak membangun ikatan emosional/struktural.
+Empat keluarga itu pelengkap berlapis: financial = alasan ekonomis tinggal; social, customization, structural = alasan relasional dan struktural.
+Jadi bukan "hapus financial", tapi jangan berhenti di financial.
 @end
 
 @q 7 :: w7-bonding-strategies :: w7-customization-bonds
@@ -141,7 +166,10 @@ Mass customization didefinisikan slide 16 sebagai "the use of flexible processes
 + Upaya ikatan berbasis penyesuaian individual (one-to-one), bukan pengelompokan pasar
 - Keduanya sama saja; istilah customization hanya versi kekinian dari segmentasi
 @why
-Miskonsepsi di trap materi: customization bonding ≠ segmentasi. Segmentasi MENGELOMPOKKAN pasar; customization bonding adalah UPAYA IKATAN di level individu — customer intimacy = solusi one-to-one, mass customization = proses dan struktur organisasi fleksibel untuk produk yang bervariasi/individual. Fokusnya proses+struktur organisasi, bukan klasifikasi pelanggan. Opsi "sama saja" adalah miskonsepsi dilusi makna.
+Miskonsepsi di trap materi: customization bonding ≠ segmentasi.
+Segmentasi MENGELOMPOKKAN pasar; customization bonding adalah UPAYA IKATAN di level individu — customer intimacy = solusi one-to-one, mass customization = proses dan struktur organisasi fleksibel untuk produk yang bervariasi/individual.
+Fokusnya proses + struktur organisasi, bukan klasifikasi pelanggan.
+Opsi "sama saja" adalah miskonsepsi dilusi makna.
 @end
 
 @q 7 :: w7-bonding-strategies :: w7-social-bonds
@@ -151,5 +179,8 @@ Industri asuransi dicontohkan slide 15 sebagai social bonds. Di warung, pelayan 
 - Social bonds among customers — dan arisan juga termasuk, karena keduanya melibatkan banyak orang
 - Continuous relationships — karena yang penting frekuensi interaksi berulang, bukan arahnya
 @why
-Personal relationships = relasi personal customer-staf (pola industri asuransi: personal touches bikin client betah). Arisan pelanggan = social bonds among customers — marketer memfasilitasi interaksi ANTAR customer, bukan dengan staf. Arah relasinya yang membedakan, bukan jumlah orangnya. Opsi "frekuensi saja" menggampangkan: continuous relationships memang bentuk lain di keluarga yang sama, tapi mengaburkan pembedaan arah yang justru diuji di sini.
+Personal relationships = relasi personal customer-staf (pola industri asuransi: personal touches bikin client betah).
+Arisan pelanggan = social bonds among customers — marketer memfasilitasi interaksi ANTAR customer, bukan dengan staf.
+Yang membedakan: ARAH relasinya, bukan jumlah orangnya.
+Opsi "frekuensi saja" menggampangkan — continuous relationships memang bentuk lain di keluarga yang sama, tapi mengaburkan pembedaan arah yang justru diuji di sini.
 @end

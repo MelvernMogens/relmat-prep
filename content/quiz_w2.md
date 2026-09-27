@@ -39,7 +39,9 @@ Rantai hasil relationship marketing versi slide W2 adalah ...
 - RM → economic performance → customer satisfaction → customer retention
 - RM → customer satisfaction → word-of-mouth → economic performance
 @why
-Urutannya: relationship marketing → customer satisfaction → customer retention → economic performance. Kepuasan BUKAN tujuan akhir — dia jalan menuju retensi baru kinerja ekonomis. Retensi sebelum kepuasan itu terbalik: yang bertahan dulu biasanya justru karena puas.
+Urutannya: relationship marketing → customer satisfaction → customer retention → economic performance.
+Kepuasan BUKAN tujuan akhir — dia jalan menuju retensi. Dari retensi, baru menghasilkan kinerja ekonomis.
+Retensi sebelum kepuasan itu terbalik: yang bertahan dulu biasanya justru karena puas.
 @end
 
 @q 2 :: w2-viewpoint :: w2-c-external-mod
@@ -71,7 +73,9 @@ Di kerangka buyer's viewpoint (Figure 3.15), "customer retention" dan "word-of-m
 - psychological consequences
 + behavioral consequences
 @why
-Figure 3.15: corporate input (output quality, perceived value) diproses jadi relationship judgment + psychological consequences (satisfaction, commitment), lalu keluar sebagai behavioral consequences (retention, WOM). Retensi dan WOM adalah PERILAKU yang kelihatan, bukan penilaian di kepala pelanggan.
+Figure 3.15: corporate input (output quality, perceived value) diproses jadi relationship judgment + psychological consequences (satisfaction, commitment).
+Lalu keluar sebagai behavioral consequences (retention, WOM).
+Retensi dan WOM adalah PERILAKU yang kelihatan, bukan penilaian di kepala pelanggan.
 @end
 
 @q 2 :: w2-intensity :: w2-c-intensity
@@ -103,7 +107,9 @@ Penyebab retensi Kafe Abe (dimensi causes, slide 11) adalah ...
 - maintaining, karena relasinya berjalan tanpa perbaikan
 - intensifying, karena nilai ordernya stabil dua tahun
 @why
-Bertahan karena kuncian kontrak/denda = retention through DEPENDENCE. Solidarity itu bertahan karena suka dan setia (contohnya Kafe Beta yang naikkan order). Maintaining/intensifying itu jawaban untuk dimensi relationship modification — beda pertanyaan: kenapa bertahan vs ke arah mana relasinya.
+Bertahan karena kuncian kontrak/denda = retention through DEPENDENCE. Solidarity itu bertahan karena suka dan setia (contohnya Kafe Beta yang naikkan order).
+Bedanya soal pertanyaan: causes = kenapa bertahan; relationship modification = ke arah mana relasinya.
+Maintaining/intensifying itu jawaban untuk dimensi relationship modification.
 @end
 
 @q 2 :: w2-retention :: w2-c-retention-dim
@@ -126,7 +132,9 @@ Kafe Delta adalah contoh retensi yang hanya ...
 - dependence, karena bertahan tanpa pilihan lain
 - solidarity, karena pemiliknya menyatakan suka terhadap toko
 @why
-Komitmen lisan bagus tapi perilaku nyata merosot = internal retention saja — risikonya churn senyap: di data omongan kelihatan setia, di data transaksi sudah pergi. De facto justru melemah; menyebut dependence/solidarity salah sasaran karena soalnya penyebab, bukan kesenjangan niat vs tindakan.
+Komitmen lisannya bagus, tapi perilaku nyatanya merosot = internal retention saja.
+Risikonya churn senyap: di data omongan kelihatan setia, di data transaksi sudah pergi.
+De facto justru melemah; menyebut dependence/solidarity salah sasaran karena soalnya penyebab, bukan kesenjangan niat vs tindakan.
 @end
 
 @q 2 :: w2-casus-polygon :: w2-c-polygon

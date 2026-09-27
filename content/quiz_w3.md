@@ -42,7 +42,8 @@ Dengan asumsi konsumen mengukur nilai per rupiah, harga maksimal Kak Ronna yang 
 - Rp15.000
 - Rp25.000
 @why
-Nilai relatif Ronna = 4/2 = 2× nilai Sebelah, jadi batas atasnya 2 × Rp10.000 = Rp20.000 (ruang tambahan ±Rp5.000 dari harga sekarang). Ini aplikasi tip 2 (kisaran): berapa tambahan harga yang masih mau dibayar agar tidak pindah ke pesaing.
+Nilai relatif Ronna = 4/2 = 2× nilai Sebelah, jadi batas atasnya 2 × Rp10.000 = Rp20.000 (ruang tambahan ±Rp5.000 dari harga sekarang).
+Ini pakai logika kisaran value: berapa tambahan harga yang masih mau dibayar agar tidak pindah ke pesaing.
 @check 4/2 ~ 2
 @check 2*10000 == 20000
 @end
@@ -74,7 +75,8 @@ Calon pembeli sepeda listrik menunda beli karena takut motornya "mati di jalan d
 - financial risk dan social risk
 - physical risk dan opportunity-loss risk
 @why
-Takut produk gak jalan sesuai harapan = performance risk; servis jauh berarti lama tertahan = time risk. Trik cepatnya: tanya "pelanggan takut rugi APA?" — hasil (performance), uang (financial), badan (physical), harga diri (psychological), status (social), waktu (time), kesempatan lain (opportunity-loss).
+Takut produk gak jalan sesuai harapan = performance risk; servis jauh berarti lama tertahan = time risk.
+Trik cepatnya: tanya "pelanggan takut rugi APA?" — hasil (performance), uang (financial), badan (physical), harga diri (psychological), status (social), waktu (time), kesempatan lain (opportunity-loss).
 @end
 
 @q 3 :: w3-atribut :: w3-c-atribut-pk, w3-f-value
@@ -106,7 +108,9 @@ Atribut X ditempatkan 4 responden di urutan 1, tiga di urutan 2, dan satu di uru
 - 23
 - 37
 @why
-S = 4(1) + 3(2) + 1(3) = 4+6+3 = 13 — persis pola atribut Baterai di kasus BikeNusa. Menjumlahkan angka urutan mentah (4+3+1=8) salah karena frekuensi harus DIBOBOT urutannya dulu; 23/37 itu skor atribut lain dari kasus slide.
+S = 4(1) + 3(2) + 1(3) = 4+6+3 = 13 — persis pola atribut Baterai di kasus BikeNusa.
+Menjumlahkan angka urutan mentah (4+3+1=8) salah, karena frekuensi harus DIBOBOT urutannya dulu.
+Catatan: 23/37 itu skor atribut lain di kasus slide — bukan jawaban alternatif.
 @check 4*1+3*2+1*3 ~ 13
 @end
 
@@ -117,7 +121,9 @@ Sebelum skor ranking dihitung, validitas data diperiksa dengan ...
 - menghapus responden yang peringkatnya tidak konsisten dengan mayoritas
 - memastikan skor total semua atribut sama besar
 @why
-Tiap responden harus memakai tiap angka urutan tepat sekali (permutasi 1..n); konsekuensinya tiap kolom urutan menjumlah N responden. Kalau tidak, ada salah isi — perbaiki dulu sebelum skor dihitung. Skor total atribut sama besar bukan syarat (dan memang kebetulan jumlah Σ di contoh slide = 150).
+Tiap responden harus memakai tiap angka urutan tepat sekali (permutasi 1..n) — konsekuensinya: tiap kolom urutan menjumlah N responden.
+Kalau gak, ada salah isi — perbaiki dulu sebelum skor dihitung.
+Skor total atribut sama besar bukan syarat (dan memang kebetulan jumlah Σ di contoh slide = 150).
 @end
 
 @q 3 :: w3-ranking :: w3-c-ranking
@@ -150,5 +156,7 @@ Dari matriks Customer Value 3×2 (slide 18): untuk segmen KELUARGA dengan anak k
 - Netflix tidak punya konten original, sehingga PK-nya nol untuk semua segmen
 - rasio CV itu universal: yang menang untuk keluarga pasti menang juga untuk penonton tunggal
 @why
-Rasio CV dinilai PERSEPSI segmen: sel yang sama berbobot beda. Keluarga menimbang konten anak & bundling; penonton tunggal menimbang serial original & personalisasi (Netflix unggul di situ). Netflix tetap punya original content — PR-nya spesifik konten anak; dan klaim rasio universal justru kebalikan pelajaran matriks.
+Rasio CV dinilai PERSEPSI segmen: sel yang sama berbobot beda.
+Keluarga menimbang konten anak & bundling; penonton tunggal menimbang serial original & personalisasi (Netflix unggul di situ).
+Netflix tetap punya original content — PR-nya spesifik konten anak; dan klaim rasio universal justru kebalikan pelajaran matriks.
 @end

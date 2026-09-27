@@ -61,7 +61,9 @@ Di studi kasus EXTRA JOSS, tagline "Buat apa beli botolnya, beli biangnya..." ya
 - D customer, karena membangun kedekatan dengan pelanggan
 - B market, karena merespons kebutuhan pasar minuman
 @why
-Tagline itu serangan frontal ke kompetitor botol → competition orientation (fase C, era 80s). EXTRA JOSS memang berjalan dari A (sachet) → B → C → D (event EXTRA JOSS AWARD). Jangan tertukar dengan event award yang menyasar pelanggan — itu fase D.
+Tagline itu serangan frontal ke kompetitor botol → competition orientation (fase C, era 80s).
+EXTRA JOSS memang berjalan dari A (sachet) → B → C → D (event EXTRA JOSS AWARD).
+Jangan tertukar dengan event award yang menyasar pelanggan — itu fase D.
 @end
 
 @q 1 :: w1-definisi :: w1-c-definisi-rm
@@ -71,7 +73,11 @@ Definisi "...to establish, maintain and enhance relationships ... by a mutual ex
 + Grönroos (1994)
 - Parvatiyar and Sheth (2000)
 @why
-Kata kunci "mutual exchange and fulfilment of promises" = Grönroos 1994. Berry 1983 itu attracting–maintaining–enhancing; Morgan & Hunt bicara "all marketing activities" dan "relational exchanges"; Parvatiyar & Sheth soal "mutual economic value at reduced cost". Hafalkan frasa khasnya, bukan perasaan.
+Kata kunci "mutual exchange and fulfilment of promises" = Grönroos 1994.
+Berry 1983 itu attracting–maintaining–enhancing.
+Morgan & Hunt bicara "all marketing activities" dan "relational exchanges".
+Parvatiyar & Sheth soal "mutual economic value at reduced cost".
+Hafalkan frasa khasnya, bukan perasaan.
 @end
 
 @q 1 :: w1-definisi :: w1-c-definisi-rm
@@ -92,7 +98,9 @@ Menurut tabel Thomas (2000), praktik Toko A termasuk ciri ...
 - transactional: no structure for ongoing business
 + transactional: after-sales at additional cost
 @why
-After-sales yang dikenakan BIAYA TAMBAHAN = ciri transactional; kalau diperlakukan sebagai investasi relasi = relationship. Ini pembeda tercepat di tabel Thomas (2000). "No structure for ongoing business" juga transactional, tapi pasangannya adalah toko tanpa kartu/program, bukan pola bayar-per-layanan.
+After-sales yang dikenakan BIAYA TAMBAHAN = ciri transactional; kalau diperlakukan sebagai investasi relasi = relationship.
+Itu pembeda tercepat di tabel Thomas (2000).
+"No structure for ongoing business" juga transactional, tapi pasangannya toko tanpa kartu/program — bukan pola bayar-per-layanan.
 @end
 
 @q 1 :: w1-definisi :: w1-c-trans-vs-rel
@@ -125,7 +133,9 @@ Faktor pengali untuk relasi n = 3 tahun kira-kira ...
 - 3,00× nilai belanja tahunan
 - 3,17× nilai belanja tahunan
 @why
-Anuitas 3 tahun di 10% = 1/1,1 + 1/1,1² + 1/1,1³ ≈ 2,4869 ≈ 2,49×. Angka 1,74× itu n = 2, dan 3,17× itu n = 4 — ratusan ribu rupiah bedanya kalau ketukar. Cek silang: 1,5 juta × 3,17 ≈ 4,75 juta seperti kasus Katering Bu Ran.
+Anuitas 3 tahun di 10% = 1/1,1 + 1/1,1² + 1/1,1³ ≈ 2,4869 ≈ 2,49×.
+Angka 1,74× itu n = 2, dan 3,17× itu n = 4 — ratusan ribu rupiah bedanya kalau ketukar.
+Cek silang: 1,5 juta × 3,17 ≈ 4,75 juta seperti kasus Katering Bu Ran.
 @check 1/1.1 + 1/1.1**2 + 1/1.1**3 ~ 2.4869
 @end
 
@@ -150,5 +160,6 @@ Kenapa menyamakan CLV dengan pendapatan tahun pertama pelanggan itu salah?
 - Karena CLV dihitung dari seluruh portofolio pelanggan sekaligus
 - Karena CLV hanya berlaku untuk pelanggan B2B berkontrak panjang
 @why
-Tahun pertama cuma satu suku dari deret V_t/(1+d)^t; durasi relasi (n) ikut masuk rumus dan sering jadi penentu utama. Angka 3,5 kali di kasus Bu Ran hilang total kalau yang dihitung cuma transaksi tahun pertama yang memang kelihatan sama.
+Tahun pertama cuma satu suku dari deret V_t/(1+d)^t; durasi relasi (n) ikut masuk rumus dan sering jadi penentu utama.
+Angka 3,5 kali di kasus Bu Ran hilang total kalau yang dihitung cuma tahun pertama — padahal tahun pertama kedua pelanggan memang kelihatan sama.
 @end
