@@ -64,13 +64,13 @@ Social risk = kekhawatiran pada pandangan orang lain, dan malu dinilai teman kan
 @end
 
 @q 6 :: w6-blueprint :: w6-line-visibility
-Di service blueprint, garis putus-putus yang memisahkan contact person onstage dari support processes disebut dan berfungsi sebagai...
+Di service blueprint (contoh hotel Bitner di slide W6-12/14), garis putus-putus yang memisahkan baris CONTACT PERSON dari baris SUPPORT PROCESSES berfungsi sebagai...
 - Line of interaction — titik pelanggan dan petugas saling kontak langsung
 - Critical incident — titik proses yang paling menentukan kepuasan
 - Physical evidence — daftar bukti fisik yang diterima pelanggan
 + Line of visibility — batas antara yang terlihat dan yang tidak terlihat pelanggan
 @why
-Garis putus-putus antara onstage dan backstage adalah line of visibility — penanda batas apa saja yang sampai terlihat mata pelanggan. Line of interaction istilah mirip tapi menandai kontak pelanggan-petugas; critical incident itu titik di proses, bukan garis; physical evidence itu baris bukti fisik, bukan pembatas.
+Garis putus-putus itu memisahkan proses yang terlihat pelanggan (contact person; istilah standar onstage) dari yang tidak terlihat (support processes; backstage) — fungsinya sebagai line of visibility, batas apa saja yang sampai terlihat mata pelanggan. Slide menggambar garisnya tanpa menulis istilahnya; istilah baku ini dari teori Bitner. Line of interaction menandai kontak pelanggan-petugas; critical incident itu titik di proses, bukan garis; physical evidence itu baris bukti fisik, bukan pembatas.
 @end
 
 @q 6 :: w6-critical :: w6-critical-incident
