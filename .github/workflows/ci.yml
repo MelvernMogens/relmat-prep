@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [main, gh-pages]
+  pull_request:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install requests
+      - run: python build/parse.py
+      - run: python build/build.py
+      - run: node --check build/_app.js
+      - run: node build/texcheck.js

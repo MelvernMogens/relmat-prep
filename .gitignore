@@ -1,0 +1,9 @@
+build/content.json
+build/_app.js
+sources/
+src_txt/
+briefs/
+out/
+supervise.log
+.DS_Store
+content/.parts/
