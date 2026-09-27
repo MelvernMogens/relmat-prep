@@ -127,7 +127,7 @@ function Topic(id, exIdx) {
       <h1>${esc(t.title)}</h1><p class="lead">${esc(t.sub)}</p>
       <div class="jump">${jumps.map(j => `<button class="chip" data-jump="${j[0]}">${j[1]}</button>`).join('')}</div>
     </header>
-    <section class="card inti"><div class="label">${icon('bulb')} Inti materi</div><ul>${t.intro.map(li => `<li>${esc(li)}</li>`).join('')}</ul></section>
+    <section class="card inti"><div class="label">${icon('bulb')} Inti materi</div><ul>${t.intro.map(li => `<li>${esc(li)}</li>`).join('')}</ul>${(t.slides && t.slides.length) ? `<div class="slideshow inti-slides">${t.slides.map(sl => SLIDES[sl] ? `<figure class="slidefig"><img src="${SLIDES[sl]}" alt="Slide ${sl}" decoding="async"><figcaption>Slide asli dosen — ${sl.replace('-', '.')}</figcaption></figure>` : '').join('')}</div>` : ''}</section>
 
     <section class="sec" id="sec-ex">
       <div class="sec-h"><h2>Contoh kasus</h2><span class="muted sm">soal → pengerjaan → jawaban → konsep</span></div>

@@ -143,19 +143,20 @@ def parse_topics(path):
             elif tag == 'uses':
                 ex['uses'] = [u.strip() for u in rest.split(',') if u.strip()]
             elif tag == 'slide':
-                if ex is None:
-                    errors.append(f'{where}: @slide outside @example')
-                else:
-                    for sl in rest.split(','):
-                        sl = sl.strip().lower().replace('slide ', '')
-                        if not sl:
-                            continue
-                        if not re.fullmatch(r'w\d+-\d+', sl):
-                            errors.append(f'{where}: bad slide key {sl!r} (expect w4-06)')
-                        elif not (ROOT / 'assets' / 'slides' / f'{sl}.jpg').exists():
-                            errors.append(f'{where}: unknown slide {sl} (no assets/slides/{sl}.jpg)')
-                        else:
-                            ex['slides'].append(sl)
+                for sl in rest.split(','):
+                    sl = sl.strip().lower().replace('slide ', '')
+                    if not sl:
+                        continue
+                    if not re.fullmatch(r'w\d+-\d+', sl):
+                        errors.append(f'{where}: bad slide key {sl!r} (expect w4-06)')
+                    elif not (ROOT / 'assets' / 'slides' / f'{sl}.jpg').exists():
+                        errors.append(f'{where}: unknown slide {sl} (no assets/slides/{sl}.jpg)')
+                    elif ex is not None:
+                        ex['slides'].append(sl)
+                    elif topic is not None:
+                        topic['slides'].append(sl)
+                    else:
+                        errors.append(f'{where}: @slide outside @topic/@example')
             elif tag == 'check':
                 check(rest, where)
             elif tag == 'end':
