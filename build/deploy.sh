@@ -11,7 +11,7 @@ cp out/index.html out/.nojekyll "$TMP/"
 cd "$TMP"
 git init -q -b gh-pages
 git add -A
-git -c user.name="Melvern Mogens" -c user.email="melvernmogens@gmail.com" commit -q -m "deploy $(date '+%Y-%m-%d %H:%M')"
+git -c user.name="Melvern Mogens" -c user.email="87085041+MelvernMogens@users.noreply.github.com" commit -q -m "deploy $(date '+%Y-%m-%d %H:%M')"
 git push -q -f "$REMOTE" gh-pages
 echo "pushed gh-pages ($(du -h index.html | cut -f1))"
 rm -rf "$TMP"
