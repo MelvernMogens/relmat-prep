@@ -1,5 +1,7 @@
 # Relationship Marketing — Belajar dari Kasus
 
+[![CI](https://github.com/MelvernMogens/relmat-prep/actions/workflows/ci.yml/badge.svg)](https://github.com/MelvernMogens/relmat-prep/actions/workflows/ci.yml)
+
 Study app interaktif untuk mata kuliah **Relationship Marketing** (Prasetiya Mulya, Dr. Eka Ardianto): contoh kasus yang dibedah langkah demi langkah, bank konsep & rumus, latihan PG dengan pembahasan, essay dengan rubrik, dan simulasi ujian ber-timer.
 
 **Live:** https://melvernmogens.github.io/relmat-prep/
@@ -16,7 +18,16 @@ Study app interaktif untuk mata kuliah **Relationship Marketing** (Prasetiya Mul
 | W6 | Managing Customer Satisfaction | ✅ |
 | W7 | Managing Customer Bonding | ✅ |
 
-Total: 30 topik, 63 contoh kasus step-reveal, 57 kartu rumus/konsep, 84 soal PG, 7 essay, 1 simulasi ujian (30 PG + 3 essay, 120 menit).
+Totalnya ada 30 topik, 63 contoh kasus step-reveal, 57 kartu rumus/konsep, 84 soal PG, 7 essay dan 1 simulasi ujian (30 PG + 3 essay, 120 menit).
+
+## Fitur
+
+- **Materi per topik** berisi kartu *Inti Materi* dengan galeri slide asli (78 gambar slide di-embed), lalu contoh kasus yang dibuka langkah demi langkah.
+- **Bank konsep & rumus**: kartu hafalan plus jebakan (*trap*) yang sering bikin salah.
+- **Latihan PG** per week, lengkap dengan pembahasan tiap opsi.
+- **Essay** dengan rubrik penilaian.
+- **Simulasi ujian** ber-timer (30 PG + 3 essay, 120 menit).
+- Progres belajar tersimpan di browser, dan app tetap jalan offline karena semuanya ada dalam satu file HTML.
 
 ## Kenapa
 
@@ -45,6 +56,7 @@ relmat-prep/
 │   ├── texcheck.js     # render semua LaTeX, gagal kalau rusak
 │   └── deploy.sh       # push out/ ke branch gh-pages
 ├── docs/CONTENT-SPEC.md# spec DSL (kontrak untuk penulis konten)
+├── CONTENT-SPEC.md     # salinan spec di root
 ├── sources/            # PPTX dosen (gitignore — JANGAN commit)
 ├── src_txt/            # transkrip slide hasil vision (gitignore)
 └── out/index.html      # hasil build (gitignore, di-publish ke gh-pages)
@@ -57,6 +69,7 @@ Konten ditulis di `content/*.md` pakai tag per baris — build gagal kalau satu 
 ```
 @week 6 :: Managing Customer Satisfaction
 @topic w6-blueprint :: Service Blueprint :: deskripsi singkat topik
+@slide w6-05         # gambar slide asli (assets/slides/), tampil di galeri Inti Materi
 @intro               # bullet poin kunci
 @formula key :: Judul :: \text{rumus LaTeX}
 @vars               # arti tiap variabel
@@ -102,12 +115,12 @@ Butuh `uv` (Python) + Node. Tanpa bundler, tanpa dependency npm.
 
 ```bash
 uv run python build/build.py
-cd out && python3 -m http.server 8796   # buka http://127.0.0.1:8796/
+cd out && python3 -m http.server 8796   # buka http://localhost:8796/
 ```
 
 ## QA & verifikasi
 
-- Semua angka contoh diverifikasi `@check` Python saat build (92 check aktif).
+- Semua angka contoh diverifikasi `@check` Python saat build (91 check aktif). CI menjalankan parse, build, syntax check dan texcheck di setiap push.
 - Audit independen: 84/84 jawaban PG dicek silang ke transkrip slide; 7 temuan atribusi (istilah textbook vs isi slide) sudah diperbaiki.
 - Mobile-first: audit overflow 390px = 0 di semua halaman.
 - Progress belajar disimpan `localStorage relmat.v1` (tombol Reset di Beranda).
@@ -122,3 +135,7 @@ cd out && python3 -m http.server 8796   # buka http://127.0.0.1:8796/
 ## Stack
 
 Vanilla JS SPA (hash router, localStorage), KaTeX + font di-embed sebagai data-URI — satu file HTML jalan offline. Fork dari engine [brand-analytics-prep](https://github.com/MelvernMogens/brand-analytics-prep).
+
+---
+
+Dibuat oleh [Melvern Mogens](https://github.com/MelvernMogens).
